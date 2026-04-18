@@ -1,0 +1,9 @@
+Here KERNELme facility to measure how long the program takes to run. The TIMEFORMAT variable 
+is used on Linux to override the default POSIX output format of time, which does not include the CPU
+usage. You can see that for this fairly old system, the 1Mb input file, file.in, was successfully copied to
+file.out, which was created with read/write permissions for owner only. However, the copy took two
+and-a-half minutes and consumed virtually all the CPU time. It was this slow because it had to make more
+than two million system calls.
+In recent years, Linux has seen great strides in its system call and file system performance. By compari
+son, a similar test using a 2.6 kernel completed in a little under 14 second
+Kernel
