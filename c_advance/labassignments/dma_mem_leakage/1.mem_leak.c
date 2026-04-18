@@ -1,0 +1,30 @@
+/********************************************************************
+*Name                 : Marati Vinay Kumar
+*KMID                 : KM64AEAI16
+*Date                 : 17-03-26
+*Program              :
+*Sample Input         :
+*Sample Output        :
+*
+*************************************************************************/
+
+#include <stdlib.h>
+ #include <stdio.h>
+ //#include "memwatch.h"
+
+ int main(void)
+ {
+   char *ptr1;
+   char *ptr2;
+
+  ptr1 = malloc(512);
+  ptr2 = malloc(512);
+ 
+ ptr2 = ptr1;
+  
+  free(ptr2);
+  free(ptr1);
+
+
+ }
+
