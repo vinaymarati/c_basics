@@ -1,0 +1,59 @@
+STORAGE CLASSES:
+				In addition to datatype each variable has one more attribute known as storage class
+	> the proper use of storage class makes our program efficient and fast
+	> syntax   storage_class datatype variable_name;
+	> there are four types of storage classes
+	1.Automatic 
+	2.External
+	3.Static
+	4.Register
+	>they are keywords case sensitive auto,extern,static,keyword used for storage classes
+	> when the storage class is not specified in declaration .compiler assumes a default storage class based on place of declaration
+	> A storage class decides the four aspects of variable
+	1.Lifetime 
+	2.Scope
+	3.Intial value
+	4.Place of storage
+------------------------------------------------------------------------------------------------------
+1.Automatic storage class:
+	> Automatic storage class is used for local variable declaration.
+	> If we not mentioned Auto keyword by default it is takes as local variables.
+	> the local variables are stored in STACK  area in the memory.
+	>SCOPE----the scope of automatic variables is within the block
+	>LIFETIME-------the lifetime of automatic variable is end of function.
+	>INITALVALUE------automatic variable takes as intial value as GARBAGE VALUE		
+		
+															
+--------------------------------------------------------------------------------------------------------
+2.External storage class:
+	>External storage class is used for global variables
+	> extern is keyword
+	>extern is used for when we want to access the variable outside the file we use extern storage class
+	>with out extern keyword we declare the variables as global variables it is avilable for within in the file only 
+	SYNTAX:  extern datatype variable
+	>SCOPE-----the scope of extern variable is 	End of file 
+	>LIFETIME-----the lifetime of variable is end of  program
+	>PLACE OF STORAGE-----variable is stored in data area
+	>INITIAL VALUE--------ZERO
+	
+	
+---------------------------------------------------------------------------------------------------------
+3.Stactic storage class
+	>1.local static variable
+	>2.global  static  variable
+	.....................................
+	1.static local variable
+	>SCOPE----it scope of variable is whithin the block but it can't destoryed
+	>LIFETIME---the lifetime of variable is end of the program
+	>PLACEOFSTORAGE----variable is stored in data area
+	>INITALVALE------zero
+	..................................
+	2.static global variable
+	>SCOPE-----the scope of variable is end of file
+	>LIFETIME-----the lifetime of variable is end of program
+	>PLACEOFSTORAGE-----data
+	>INTIALVALUE-------zero
+-----------------------------------------------------------------------------------------------------------
+4.Register storage class
+	>register storage class is similar to automatic storage class  
+	

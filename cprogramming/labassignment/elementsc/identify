@@ -1,0 +1,33 @@
+int Change_Value = 0;                    // int [keyword],Change_value [identifier] , 0 [constant]
+  int Sum_it (int, int);                          // int [k], Sum_it [I]
+  void error_with_code (void);                                  // void [K], error_with_code [I]
+ int main (void)                                                 // int [K], main [I]
+ {  
+    int Arg_1 = 20, Arg_2 = 40;                                  //int [K], Arg_1,Arg_2 [I], 20,40 [c]
+    int i;                                                       // int [K] ,i [I]
+     for (i = 0; i < 10;i++)                                     // for [K] , i [I] , 0,10 [c]
+     {                     
+        if (Arg_1 > Arg_2)                                      // if[K],Arg_1, Arg_2[I]
+             Arg_2 = Sum_it (Arg_1, Arg_2);                     // Arg_2 ,Sum_it [I]
+        else                                                    // else [K]
+            Arg_1 = Sum_it (Arg_1, Arg_2);                      // Arg_1,Arg_2, Sum_it [I]
+     }
+     error_with_code ();                                        // error_with_code [I]
+ }   /* End of main() */                                       
+
+ int Sum_it (int a, int b)                                     // int [k] Sum_it,a ,b  [I] 
+ {               
+     return a+b;                                               // return [K] , a,b [I]
+ } /* End of Sum_it */                                         
+
+ void error_with_code(void)                                   // void [K], error_with_code [I]
+ {                      
+    int divide_value;                                         // int [K], divide_value [I]
+    int result;                                               // int [K] ,result [I]
+    divide_value = Change_Value;                              // divide_value, Change_Value [I]
+    result = 10 / divide_value;                               //result [I], divide_value [I],10 [c]
+    return ;                                                  // return [K]
+
+ } /* End of error_with_code() */
+
+
